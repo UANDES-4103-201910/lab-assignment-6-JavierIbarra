@@ -18,5 +18,8 @@ class SessionsController < ApplicationController
 
 	def destroy
 		#complete this method
+		@_current_user_id = nil
+		cookies["authentification"] = nil
+		redirect_to root_path
 	end
 end
