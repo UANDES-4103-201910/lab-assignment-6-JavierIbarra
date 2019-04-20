@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
     logged_in = false
     if current_user != nil
       logged_in = true
+    end
 	  if logged_in then true else redirect_to root_path end 
     end
 end
