@@ -6,7 +6,9 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-	#complete this method
+    #complete this method
+    authentification = cookies["authentification"]
+    return authentification
   end
 
   def is_user_logged_in?
